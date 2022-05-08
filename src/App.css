@@ -1,11 +1,21 @@
+body[data-theme="t-dark"]{
+  --primary-color: black;
+  --secundary-color: white;
+}
+body[data-theme="t-light"]{
+  --primary-color: white;
+  --secundary-color: black;
+}
+
 *{
-  background-color: #BC0B0B;
   padding: 0;
 }
 
 /* para telas pequenas */
 @media only screen and (max-width: 600px){
   .geral{
+    background: var(--primary-color);
+    color: var(--secondary-color);
     display: flex;
     justify-content: center;
     padding: 50px;
@@ -25,7 +35,8 @@
 @media only screen and (min-width: 600px){
 
   .geral{
-    color: aliceblue;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     display: flex;
     justify-content: center;
     padding: 40px;
@@ -33,7 +44,7 @@
   }
   
   .icon{
-    border-radius: 50px;
+    border-radius: 10px;
     height: 100px;
     width: auto;
   }
